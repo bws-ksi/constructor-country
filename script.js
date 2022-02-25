@@ -1,12 +1,27 @@
-function getObj()
+function getObj() {
+  return this;
+}
 
-// #2 task
+getCoutry(){
+  for (let key in Country){
+    console.log(key);
+  }
+}
 
-Country(title - название страны, capital - столица, population - население, area - площадь)
+function Country(title, capital, population, area) {
+  this.titleCountry = title;
+  this.capitalCountry = capital;
+  this.populationCountry = population;
+  this.areaCountry = area;
+  this.formsOfGovernment = "Republic"
+  this.displayInfo = getCountry(); //??????
+};
 
-getCountry( getObj() )
 
-let Country1 = new Country("France", "Paris", 1854565, 45054851)
-let Country2 = new Country("Italy", "Rome", 654654654, 465745)
-let Country3 = new Country("Germany", "Berlin", 654654654, 6545454)
-let Country4 = 
+let france = new Country("France", "Paris", 1854565, 45054851)
+let italy = new Country("Italy", "Rome", 654654654, 465745)
+let germany = new Country("Germany", "Berlin", 654654654, 6545454)
+
+console.log(france);
+console.log(italy);
+console.log(germany);
