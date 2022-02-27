@@ -9,7 +9,7 @@ function Country(title, capital, population, area) {
   this.populationCountry = population;
   this.areaCountry = area;
   this.formsOfGovernment = "Republic";
-  this.getCountry = getObj();  
+  this.getCountry = getObj(Country.this);  
 };
 
 const france = new Country("France", "Paris", 1854565, 45054851)
