@@ -1,9 +1,17 @@
 function getObj(){
   return this;
 }
-function getProperty() {
-  for (let key in Country){
-    Country.getCountry[key];
+function getProperty(country) {
+  for (let key in country){
+    if ( typeof(country[key]) === 'function' ){
+      //console.log('get parametr ' + key);
+      //console.log(`${key}: ${country[key]}`)
+      //console.log(key, ":", country[key])
+    }
+    //console.log('get parametr ' + key);
+    console.log(`${key}: ${country[key]}`);
+    //console.log(/*key, ":", */country[key]);
+    //console.log( typeof( country[key] ) );
   }
 }
 function Country(title, capital, population, area) {
@@ -12,17 +20,13 @@ function Country(title, capital, population, area) {
   this.populationCountry = population;
   this.areaCountry = area;
   this.formsOfGovernment = "Republic";
-  this.getCountry = getObj(this);  
+  this.getCountry = getObj;  
 };
-const france = new Country("France", "Paris", 1854565, 45054851)
-//console.table(france);
- const italy = new Country("Italy", "Rome", 654654654, 465745)
-// let germany = new Country("Germany", "Berlin", 654654, 6545454)
-//console.table(italy.getCountry);
-function getParams(france) {
-  for (let key in ) {
-    
-  }
-  
-}
+//const france = new Country("France", "Paris", 1854565, 45054851)
+//const italy = new Country("Italy", "Rome", 654654654, 465745)
+const germany = new Country("Germany", "Berlin", 654654, 6545454)
 
+//getProperty(france)
+//getProperty(italy)
+getProperty(germany)
+//console.table(germany);
