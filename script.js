@@ -3,13 +3,13 @@ function getObj(){
 }
 function getProperty(country) {
   for (let key in country){
-    if ( typeof(country[key]) === 'function' ){
+    if ( typeof(country[key]) != 'function' ){
       //console.log('get parametr ' + key);
-      //console.log(`${key}: ${country[key]}`)
+      console.log(`${key}: ${country[key]}`)
       //console.log(key, ":", country[key])
     }
     //console.log('get parametr ' + key);
-    console.log(`${key}: ${country[key]}`);
+    //console.log(`${key}: ${country[key]}`);
     //console.log(/*key, ":", */country[key]);
     //console.log( typeof( country[key] ) );
   }
