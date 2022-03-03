@@ -39,3 +39,59 @@
 /////////////////////////////
 
 Тебе нужно создать еще одну функцию (назовем ее getPropsCountry, к примеру), которая будет получать объект страну в аргументах и затем перебирать ее в цикле. Функция getObj() возвращает this. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//console.log('get parametr ' + key);
+//console.log(key, ":", country[key])
+//console.log('get parametr ' + key);
+    //console.log(`${key}: ${country[key]}`);
+    //console.log(/*key, ":", */country[key]);
+    //console.log( typeof( country[key] ) );
+
+
+
+
+
+
+function getObject(country){
+  for (let key in contry){
+    getObj(country)
+  }
+}
+
+
+
+
+
+
+/*
+    if ( typeof(country[key]) != 'function'){
+      console.log(`${key}: ${country[key]}`)   
+    }    */

@@ -3,15 +3,8 @@ function getObj(){
 }
 function getProperty(country) {
   for (let key in country){
-    if ( typeof(country[key]) != 'function' ){
-      //console.log('get parametr ' + key);
-      console.log(`${key}: ${country[key]}`)
-      //console.log(key, ":", country[key])
-    }
-    //console.log('get parametr ' + key);
-    //console.log(`${key}: ${country[key]}`);
-    //console.log(/*key, ":", */country[key]);
-    //console.log( typeof( country[key] ) );
+    //console.log( country.getCountry()[key] )
+    console.log(country.getCountry()[key])
   }
 }
 function Country(title, capital, population, area) {
@@ -29,4 +22,3 @@ const germany = new Country("Germany", "Berlin", 654654, 6545454)
 //getProperty(france)
 //getProperty(italy)
 getProperty(germany)
-//console.table(germany);
